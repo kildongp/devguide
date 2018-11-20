@@ -15,6 +15,53 @@ mysql connect, use sudo, if not , connection fail.
 ```
 sudo mysql -u root -p
 ```
+### Add account
+
+* user1 계정 생성
+'''
+create user '계정아이디'@'접속위치' identified by '패스워드';
+'''
+
+'''
+create user 'user1'@'%' identified by 'user!@#$';
+'''
+
+* user1 권한 주기
+
+'''
+grant all privileges on DB이름.테이블 to '계정아이디'@'접속위치';
+'''
+
+'''
+grant all privileges on testDB.* to 'user1'@'localhost';
+'''
+
+* user 권한보기
+
+'''
+grant select on testDB.* to 'user1'@'%';
+'''
+
+* 권한 확인
+
+'''
+show grants for 'user1'@'접속위치';
+'''
+
+* 계정 삭제
+'''
+drop user '계정아이디'@'접속위치';
+'''
+
+'''
+drop user 'user1'@'%';
+'''
+
+** 권한 삭제
+
+'''
+revoke all on DB이름.테이블 FROM '계정아이디'@'접속위치';
+'''
 
 ## Install Node
 
