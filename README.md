@@ -7,15 +7,18 @@ Server OS : Ubuntu 18.04
 
 ```sudo apt-get update
 sudo apt-get install mariadb-server mariadb-client
+```
 
 mysql connect, use sudo, if not , connection fail.
 
-```sudo mysql -u root -p```
+```sudo mysql -u root -p
+```
 
 # Install Node
 
 ```curl -sL https://deb.nodesource.com/setup_11.x | sudo -E bash -
 sudo apt-get install -y nodejs
+```
 
 
 
