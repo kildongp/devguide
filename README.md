@@ -17,14 +17,14 @@ sudo mysql -u root -p
 ```
 
 * Add account
+ + user1 계정 생성
 
- * user1 계정 생성
 create user '계정아이디'@'접속위치' identified by '패스워드';
 ```
 create user 'user1'@'%' identified by 'user!@#$';
 ```
 
-* user1 권한 주기
+* * user1 권한 주기
 
 '''
 grant all privileges on DB이름.테이블 to '계정아이디'@'접속위치';
