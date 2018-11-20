@@ -2,7 +2,42 @@
 development environment setting
 
 Server OS : Ubuntu 18.04
+## Apache Install 
 
+```
+sudo apt-get install apache2
+sudo a2enmod proxy
+sudo a2enmod proxy_http
+```
+
+vi /etc/apache2/sites-available/000-default.conf
+```
+<VirtualHost *:80>
+    ServerAdmin     {ADMIN_EMAIL}
+    ServerName      {SERVER_NAME}
+    ServerAlias     {SERVER_ALIAS}
+    ErrorLog        logs/error_log
+    CustomLog       logs/access_log common
+    ProxyRequests   off
+    <Proxy *>
+        Order       deny,allow
+        Allow       from all
+    </Proxy>
+    <Location />
+        ProxyPass           http://localhost:{PORT}/
+        ProxyPassReverse    http://localhost:{PORT}/
+    </Location>
+</VirtualHost>
+```
+* apache config test
+```
+apachectl -t
+```
+
+apache restart
+```
+sudo service apache2 restart
+```
 ## Maria Db Install
 
 ```
