@@ -171,3 +171,7 @@ for title in my_titles:
     print(title.get('href'))
 ```
 
+Selenium을 설치하는 것은 기본적으로 pip를 이용한다.
+```
+pip install selenium
+```
