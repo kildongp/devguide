@@ -179,11 +179,13 @@ pip install selenium
 크롬을 사용하려면 로컬에 크롬이 설치되어있어야 한다.
 
 그리고 크롬 드라이버를 다운로드 받아주자.
+크롬 드라이버를 받을 때 내 크롬 버전과 같아야 한다.
+
 
 https://sites.google.com/a/chromium.org/chromedriver/downloads
 
 ```
-wget https://chromedriver.storage.googleapis.com/74.0.3729.6/chromedriver_mac64.zip
+wget https://chromedriver.storage.googleapis.com/73.0.3683.68/chromedriver_mac64.zip
 unzip chromedriver_mac64.zip
 ```
 
