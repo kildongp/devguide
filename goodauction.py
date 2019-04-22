@@ -11,4 +11,4 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 driver = webdriver.Chrome( BASE_DIR + '/chromedriver')
 driver.implicitly_wait(3)
 # url에 접근한다.
-driver.get('https://google.com')
+driver.get('http://www.goodauction.com/')
