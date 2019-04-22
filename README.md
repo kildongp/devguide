@@ -180,6 +180,9 @@ pip install selenium
 
 그리고 크롬 드라이버를 다운로드 받아주자.
 크롬 드라이버를 받을 때 내 크롬 버전과 같아야 한다.
+도움말 > 크롬정보
+<img width="733" alt="크롬도움말" src="https://user-images.githubusercontent.com/45186657/56499317-cf324000-6540-11e9-9cd9-0e61749c5033.png">
+
 
 
 https://sites.google.com/a/chromium.org/chromedriver/downloads
