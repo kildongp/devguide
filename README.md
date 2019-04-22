@@ -137,7 +137,7 @@ sudo update-alternatives --get-selections | grep ^java
 
 
 # python 설치
-'''
+```
 sudo easy_install pip
-'''
+```
 
