@@ -141,3 +141,15 @@ sudo update-alternatives --get-selections | grep ^java
 sudo easy_install pip
 ```
 
+설치확인
+```
+pip
+```
+
+bs4 install
+```
+sudo pip install bs4
+```
+
+
+
